@@ -3,6 +3,7 @@
 Program: Ahmet Aksoy
 Tarih: 27.06.2016
 Sürüm : Python 3.5.1
+Düzenleme: Toprak Öztürk
 Türkçede kullanılan 'stop words', yani dolgu sözcükler için seçilenlerin
 kullanım frekansları en yüksek ilk 10 bin sözcük arasında olup olmadığı
 aşağıdaki kodlarla kontrol ediliyor.
