@@ -6,7 +6,7 @@ In order to use the module:
 import trstop
 trstop.is_stop_word(parameter)
 
-Programmers:
+Contributors:
 Ahmet Aksoy
 Toprak Öztürk
 
