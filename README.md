@@ -11,9 +11,8 @@ trstop.is_stop_word(parameter)
 
 ## Contributors:
 
-Ahmet Aksoy
-
-Toprak Öztürk
+- Ahmet Aksoy
+- Toprak Öztürk
 
 Bu depoya en sık kullanılan 10 bin Türkçe sözcük listesinde yer alan dolgu sözcüklerini ekledim.
 Dolgu sözcükleri (stop words), sık kullanılan, ama iptal edildiklerinde ayrıldıkları cümlenin anlamında önemli değişiklikler oluşturmayan sözcüklerdir.
@@ -29,7 +28,6 @@ trstop.is_stop_word(parametre)
 
 ## Projeye katkıda bulunanlar:
 
-Ahmet Aksoy
-
-Toprak Öztürk
+- Ahmet Aksoy
+- Toprak Öztürk
 
