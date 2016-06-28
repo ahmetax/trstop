@@ -9,26 +9,52 @@ aşağıdaki kodlarla kontrol ediliyor.
 zxtest sözcüğü özellikle kontrol amacıyla eklenmiştir.
 """
 
-onbinlik = {}
-def onbin_oku():
-    dict_basla = False
-    with open("/home/ax/PycharmProjects/trdp/dosyalar/derlemtr2016-10000.txt", "r",encoding="utf-8") as f:
-        for line in f:
-            l=line.split()
-            if len(l)<=1:continue
-            if l[0][0] not in ['0','1']: continue
-            #print (l[1], l[0])
-            onbinlik[l[1].strip()] = int(l[0].strip())
+dictionary = {}
 
-onbin_oku()
 
-fstop = open("/home/ax/PycharmProjects/trdp/dosyalar/turkce-stop-words",encoding="utf-8")
-for sat in fstop:
-    stop = sat.strip()
-    if stop in onbinlik.keys():
-        #print("{} listede var".format(stop))
-        pass
-    else:
-        print("{} listede yok".format(stop))
+# lisans bilgisini de barindaridan sozluk dosyasini ac
+with open("dosyalar/derlemtr2016-10000.txt", 'r', encoding = 'utf-8') as fdict:
+	for line in fdict:
+		# lisansa ait olan satirlari yoksay ve bos satirlari atla
+		if (line[0] not in ['0', '1']):
+			continue
 
-fstop.close()
+		freq, word = line.strip().split()
+		dictionary[word] = int(freq)
+
+
+def is_stop_word(word):
+	""" 
+	parametre olarak verilen sozcugun sozlukte olup olmadigini kontrol eder.
+	checks if word is in the dictionary, returns true if so.
+
+	word: str
+	return: bool
+	"""
+	return word in dictionary.keys()
+
+
+def get_word_freq(word):
+	"""
+	parametre olarak verilen sozcugun frekansini geri dondurur. 
+	sozcuk sozlukte yoksa 0 dondudur.
+	returns usage frequency of word. returns 0 if word is not in the dict.
+
+	word: str
+	return: int
+	"""
+	if is_stop_word(word):
+		return dictionary[word]
+	else:
+		return 0
+
+if __name__ == '__main__':
+	ftest = open("dosyalar/turkce-stop-words",encoding="utf-8")
+
+	for word in ftest:
+		word = word.strip()
+
+		if not word in dictionary.keys():
+			print('{} sozlukte yok'.format(word))
+		is_stop_word
+	ftest.close()
