@@ -34,3 +34,6 @@ trstop.is_stop_word(parametre)
 - Ahmet Aksoy
 - Toprak Öztürk
 
+Son güncelleme: 07.10.2016
+
+
