@@ -2,7 +2,8 @@
 Turkish Stop Words  Türkçe Dolgu Sözcükleri
 In this repository I put Turkish stop words that is contained in the first 10 thousand words with the highest frequency.
 In order to test the new candidate words in future, I add a small python script, and a 10 thousand item word list with highest frequency.
-At https://github.com/sgsinclair/trombone/blob/master/src/main/resources/org/voyanttools/trombone/keywords/stop.tr.turkish-lucene.txt are some Turkish stop words. However, some stop words in that list do not belong to the ten thousand highest frequency words.
+
+[sgsinclair/trombone](https://github.com/sgsinclair/trombone/blob/master/src/main/resources/org/voyanttools/trombone/keywords/stop.tr.turkish-lucene.txt) repository includes some of the Turkish stop words. However, some stop words in that list do not belong to the ten thousand highest frequency words.
 
 ## In order to use the module:
 
