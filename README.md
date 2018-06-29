@@ -8,7 +8,7 @@ At https://github.com/sgsinclair/trombone/blob/master/src/main/resources/org/voy
 
 import trstop
 
-trstop.is_stop_word(parameter)
+print(trstop.is_stop_word(parameter))
 
 ## Contributors:
 
@@ -21,19 +21,19 @@ Dolgu sözcükleri (stop words), sık kullanılan, ama iptal edildiklerinde ayr�
 "Stop words" terimine karşılık "dolgu sözcükleri" terimini kullandım. Daha iyi bir seçenek varsa, değiştirmeye hazırım.
 Depoya eklediğim "turkce-stop-words-dict.py" betiğini, ileride listeye yeni sözcükler eklemek istediğimizde kullanım sıklığını denetlemek amacıyla kullanabiliriz.
 
-https://github.com/sgsinclair/trombone/blob/master/src/main/resources/org/voyanttools/trombone/keywords/stop.tr.turkish-lucene.txt  adresinde de bazı dolgu sözcükleri listelenmiş. Ancak buradaki bazı sözcükler ilk onbine girecek kadar yoğun frekansa sahip değil.
+https://github.com/sgsinclair/trombone/blob/master/src/main/resources/org/voyanttools/trombone/keywords/stop.tr.turkish-lucene.txt  adresinde de bazı dolgu sözcükleri listelenmiş. Ancak buradaki bazı sözcükler ilk on bine girecek kadar yoğun frekansa sahip değil.
 
 ## Modülü kullanmak için:
 
 import trstop
 
-trstop.is_stop_word(parametre)
+print(trstop.is_stop_word(parametre))
 
 ## Projeye katkıda bulunanlar:
 
 - Ahmet Aksoy
 - Toprak Öztürk
 
-Son güncelleme: 07.10.2016
+Son güncelleme: 29.06.2018
 
 
